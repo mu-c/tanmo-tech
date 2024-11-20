@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>感谢您的留言 - 探默科技</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .thanks-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            background: var(--dark-bg);
+        }
+        .thanks-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .thanks-content h1 {
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+            font-size: 2.5rem;
+        }
+        .thanks-content p {
+            color: var(--text-color);
+            margin-bottom: 2rem;
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+        .back-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: linear-gradient(45deg, var(--secondary-color), var(--accent-color));
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .back-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 180, 216, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="thanks-container">
+        <div class="thanks-content">
+            <h1>感谢您的留言</h1>
+            <p>我们已收到您的消息，将尽快与您联系。感谢您对探默科技的关注！</p>
+            <a href="index.html" class="back-button">返回首页</a>
+        </div>
+    </div>
+</body>
+</html>

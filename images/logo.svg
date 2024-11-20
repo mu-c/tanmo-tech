@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="240" height="60" viewBox="0 0 240 60" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .text { fill: #3498db; font-family: Arial, sans-serif; font-weight: bold; }
+        .wave { fill: none; stroke: #3498db; stroke-width: 2; }
+        .pulse { fill: #e74c3c; }
+    </style>
+    <!-- 波形图案 -->
+    <path class="wave" d="M20,30 Q25,20 30,30 T40,30 T50,30 T60,30">
+        <animate attributeName="d" 
+                 dur="1.5s"
+                 repeatCount="indefinite"
+                 values="M20,30 Q25,20 30,30 T40,30 T50,30 T60,30;
+                        M20,30 Q25,40 30,30 T40,30 T50,30 T60,30;
+                        M20,30 Q25,20 30,30 T40,30 T50,30 T60,30"/>
+    </path>
+    <!-- 脉冲点 -->
+    <circle class="pulse" cx="40" cy="30" r="3">
+        <animate attributeName="r"
+                 values="2;4;2"
+                 dur="1.5s"
+                 repeatCount="indefinite"/>
+        <animate attributeName="opacity"
+                 values="1;0.5;1"
+                 dur="1.5s"
+                 repeatCount="indefinite"/>
+    </circle>
+    <!-- 文字 -->
+    <text class="text" x="70" y="38" font-size="32">探默科技</text>
+</svg>
